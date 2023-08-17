@@ -1,0 +1,81 @@
+{{ define "sidebar" }}
+
+<div class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+        <div>
+            <img src="static/admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
+        </div>
+        <div>
+            <h4 class="logo-text">Admin</h4>
+        </div>
+        <div class="toggle-icon ms-auto">
+
+            <i class='bx bx-arrow-to-left icon_font_size'></i>
+        </div>
+    </div>
+    <!--navigation-->
+    <ul class="metismenu" id="menu">
+        <li>
+            <a href="/admin">
+                <div class="parent-icon">
+                    <i class='bx bx-cookie icon_font_size'></i>
+                </div>
+                <div class="menu-title">Dashboard</div>
+            </a>
+        </li>
+
+        <li class="menu-label">Setting</li>
+
+        <!-- Team MGT -->
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon side_bar_icons">
+                    <i class="bx bx-category icon_font_size"></i>
+                </div>
+                <div class="menu-title">Team MGT</div>
+            </a>
+            <ul>
+                <li>
+                    <a href="/team-add">
+                        <i class="fa-solid fa-store icon_font_size"></i>
+                        Add Team
+                    </a>
+                </li>
+                <li>
+                    <a href="/team-list">
+                        <i class="fa-solid fa-tag icon_font_size"></i>
+                        Team List
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ToDo MGT -->
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon side_bar_icons">
+                    <i class="bx bx-category icon_font_size"></i>
+                </div>
+                <div class="menu-title">Todo MGT</div>
+            </a>
+            <ul>
+                <li>
+                    <a href="/todo-add">
+                        <i class="fa-solid fa-store icon_font_size"></i>
+                        Add Todo
+                    </a>
+                </li>
+                <li>
+                    <a href="/todo-list">
+                        <i class="fa-solid fa-tag icon_font_size"></i>
+                        Todo List
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--end navigation-->
+</div>
+
+{{ end }}
